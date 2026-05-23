@@ -2,7 +2,7 @@
 
 [![skills.sh](https://skills.sh/b/JuzhengSi/draft-goal-skill)](https://skills.sh/JuzhengSi/draft-goal-skill)
 
-`draft-goal-skill` helps Codex turn vague or high-level requests into reviewable, evidence-driven `/goal` contracts.
+`draft-goal-skill` helps AI agents turn vague or high-level requests into reviewable, evidence-driven `/goal` contracts.
 
 The skill is intentionally collaborative. It does not treat the first answer as final. It first decides whether `/goal` is appropriate, asks focused clarification questions when needed, drafts a provisional goal, and only produces a final `/goal` after confirmation.
 
@@ -56,20 +56,20 @@ You can also install from a local checkout:
 npx skills add ./draft-goal-skill
 ```
 
-Or copy this folder into your Codex skills directory:
+Or copy this folder into an agent skills directory:
 
 ```bash
-cp -R draft-goal-skill "$CODEX_HOME/skills/draft-goal"
+cp -R draft-goal-skill .agents/skills/draft-goal
 ```
 
-If `CODEX_HOME` is not set, use your Codex skills directory directly.
+Adjust the destination path for your agent environment if it uses a different skills directory.
 
 ## Usage
 
 Invoke the skill by name:
 
 ```text
-$draft-goal I want Codex to keep working on this flaky checkout test until it is either fixed with evidence or clearly blocked.
+$draft-goal I want the agent to keep working on this flaky checkout test until it is either fixed with evidence or clearly blocked.
 ```
 
 For a suitable long-running task, the skill will usually start with known fields and open questions. After the important questions are answered, it returns a draft goal. After confirmation, it returns the final copyable `/goal`.

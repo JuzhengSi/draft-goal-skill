@@ -24,5 +24,5 @@ Known fields:
 Open questions:
 1. Which performance metric should define success, such as p95 latency, build time, page load time, or memory usage?
 2. Which command, benchmark, trace, or monitoring source should verify the improvement?
-3. Which parts of the app may Codex modify, and which areas are out of scope?
+3. Which parts of the app may the agent modify, and which areas are out of scope?
 ```

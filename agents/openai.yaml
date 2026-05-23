@@ -1,4 +1,4 @@
 interface:
   display_name: "Draft Goal"
-  short_description: "Turn vague requests into strong Codex goals"
-  default_prompt: "Use $draft-goal to convert my requirement into a complete, reviewable Codex /goal."
+  short_description: "Turn vague requests into strong agent goals"
+  default_prompt: "Use $draft-goal to convert my requirement into a complete, reviewable agent goal."

@@ -1,6 +1,6 @@
 ---
 name: draft-goal
-description: "Draft and refine Codex goal prompts through clarification before finalization."
+description: "Draft and refine agent goal prompts through clarification before finalization."
 ---
 
 # Draft Goal
@@ -19,9 +19,9 @@ Use this skill to turn a raw user request into a strong goal contract before exe
    - Result: what must be true when the work is done.
    - Validation surface: tests, benchmarks, reports, artifacts, command output, source material, or other evidence that proves completion.
    - Constraints: behavior, quality, compatibility, safety, or scope that must not regress.
-   - Boundaries: files, tools, repositories, data, services, time, budget, or resources Codex may use.
-   - Iteration strategy: how Codex should choose the next attempt after each result.
-   - Blocked stop condition: when Codex should stop, what it should report, and what input would unlock progress.
+   - Boundaries: files, tools, repositories, data, services, time, budget, or resources the agent may use.
+   - Iteration strategy: how the agent should choose the next attempt after each result.
+   - Blocked stop condition: when the agent should stop, what it should report, and what input would unlock progress.
 
 3. Clarify before finalizing.
    Start by identifying the goal fields that are clear, uncertain, or missing. Ask up to three concise questions when the user's request leaves meaningful choices about outcome, validation, constraints, boundaries, iteration strategy, or blocked stop conditions. Prefer a short clarification round over making assumptions. If the user explicitly asks for a quick draft, produce a provisional draft and label all assumptions.
@@ -92,12 +92,12 @@ If the user writes in another language, translate the labels naturally or keep t
 Use this template when composing the draft or final line:
 
 ```text
-/goal <desired end state>, verified by <specific evidence>, while preserving <constraints>. Use <allowed inputs, tools, and boundaries>. Between iterations, <how Codex should choose the next best action>. If blocked or no defensible path remains, <what Codex should report and what would unlock progress>.
+/goal <desired end state>, verified by <specific evidence>, while preserving <constraints>. Use <allowed inputs, tools, and boundaries>. Between iterations, <how the agent should choose the next best action>. If blocked or no defensible path remains, <what the agent should report and what would unlock progress>.
 ```
 
 ## Research Goals
 
-For research, paper reproduction, audits, or ambiguous investigations, require an evidence ledger instead of a single success claim. The goal should ask Codex to:
+For research, paper reproduction, audits, or ambiguous investigations, require an evidence ledger instead of a single success claim. The goal should ask the agent to:
 
 - identify the main claims or target results,
 - map each claim to available evidence,
@@ -116,7 +116,7 @@ Example:
 Before presenting the final `/goal`, verify:
 
 - The result is a state, not just an activity.
-- The validation surface is concrete enough for Codex to audit.
+- The validation surface is concrete enough for the agent to audit.
 - Constraints prevent important regressions.
 - Boundaries stop the goal from expanding indefinitely.
 - The iteration strategy explains how to continue after partial progress.

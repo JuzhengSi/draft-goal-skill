@@ -3,7 +3,7 @@
 ## User Request
 
 ```text
-$draft-goal I want Codex to keep working on an intermittent checkout test failure until it either fixes the issue with evidence or can clearly explain what blocks progress.
+$draft-goal I want the agent to keep working on an intermittent checkout test failure until it either fixes the issue with evidence or can clearly explain what blocks progress.
 ```
 
 ## Expected Skill Behavior
@@ -16,8 +16,8 @@ The skill should identify or ask about:
 - the expected evidence for a real fix
 - allowed files or services
 - regressions that must not happen
-- how Codex should iterate after each failure
-- when Codex should stop as blocked
+- how the agent should iterate after each failure
+- when the agent should stop as blocked
 
 ## Example Draft Shape
 
