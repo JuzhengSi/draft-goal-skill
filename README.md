@@ -53,13 +53,13 @@ npx skills add JuzhengSi/draft-goal-skill
 You can also install from a local checkout:
 
 ```bash
-npx skills add ./draft-goal-skill
+npx skills add .
 ```
 
 Or copy this folder into an agent skills directory:
 
 ```bash
-cp -R draft-goal-skill .agents/skills/draft-goal
+cp -R skills/draft-goal .agents/skills/draft-goal
 ```
 
 Adjust the destination path for your agent environment if it uses a different skills directory.
