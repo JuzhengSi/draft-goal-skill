@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Goal Design",
+      "description": "Skills for drafting, reviewing, and finalizing agent goal contracts.",
+      "skills": ["draft-goal"]
+    }
+  ]
+}
