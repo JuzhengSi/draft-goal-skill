@@ -2,6 +2,8 @@
 
 [![skills.sh](https://skills.sh/b/JuzhengSi/draft-goal-skill)](https://skills.sh/JuzhengSi/draft-goal-skill)
 
+[中文文档](README.zh.md)
+
 `draft-goal-skill` helps AI agents turn vague or high-level requests into reviewable, evidence-driven `/goal` contracts.
 
 The skill is intentionally collaborative. It does not treat the first answer as final. It first decides whether `/goal` is appropriate, asks focused clarification questions when needed, drafts a provisional goal, and only produces a final `/goal` after confirmation.
